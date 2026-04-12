@@ -76,9 +76,15 @@
   .hero-bg {
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse 80% 60% at 60% 40%, rgba(200,151,58,0.06) 0%, transparent 70%),
-      radial-gradient(ellipse 50% 80% at 10% 80%, rgba(15,35,64,0.8) 0%, transparent 60%),
-      linear-gradient(160deg, #0b1a2e 0%, #0f2340 50%, #0b1a2e 100%);
+      linear-gradient(100deg, rgba(11,26,46,0.97) 0%, rgba(11,26,46,0.85) 40%, rgba(11,26,46,0.45) 70%, rgba(11,26,46,0.3) 100%);
+    z-index: 1;
+  }
+  .hero-photo-bg {
+    position: absolute; inset: 0;
+    background-image: url('george-landscape.png');
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.55;
   }
   .hero-grid {
     position: absolute; inset: 0; opacity: 0.04;
@@ -295,11 +301,6 @@
     content: '';
     position: absolute; bottom: 0; left: 0; right: 0; height: 40%;
     background: linear-gradient(transparent, rgba(11,26,46,0.8));
-  }
-  .photo-placeholder {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; letter-spacing: 0.12em;
-    color: var(--white-muted); text-align: center; padding: 20px;
   }
   .candidate-name-badge {
     position: absolute; bottom: -1px; left: -1px; right: -1px;
@@ -539,6 +540,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-photo-bg"></div>
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
@@ -634,12 +636,9 @@
     <div class="candidate-inner">
       <div class="candidate-photo fade-up">
         <div class="candidate-photo-frame">
-          <!-- REPLACE: Add George's photo as <img src="george-psoras.jpg" style="width:100%;height:100%;object-fit:cover;"> -->
-          <div class="photo-placeholder">
-            [George Psoras Photo]<br><br>
-            Replace this div with:<br>
-            &lt;img src="george-psoras.jpg"&gt;
-          </div>
+          <img src="george-portrait.png" 
+               style="width:100%;height:100%;object-fit:cover;object-position:center top;"
+               alt="George Psoras — Republican Candidate for Carroll County State's Attorney 2026">
           <div class="candidate-name-badge">
             <strong>George Psoras</strong>
             <span>Republican Candidate · State's Attorney 2026</span>
