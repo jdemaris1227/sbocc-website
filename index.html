@@ -273,6 +273,33 @@
     color: var(--white-dim); line-height: 1.75;
   }
 
+  /* ── REPORT ── */
+  .report {
+    background:
+      radial-gradient(ellipse 70% 80% at 50% 50%, rgba(200,151,58,0.06) 0%, transparent 70%),
+      var(--navy);
+    text-align: center;
+  }
+  .report .section-label { justify-content: center; }
+  .report .section-label::before { display: none; }
+  .report .section-title { margin: 0 auto 16px; }
+  .report .section-lead { margin: 0 auto 36px; text-align: left; max-width: 620px; }
+  .report-download {
+    display: inline-block;
+    background: var(--gold); color: var(--navy);
+    padding: 18px 56px; font-family: 'DM Mono', monospace;
+    font-size: 13px; letter-spacing: 0.16em;
+    text-transform: uppercase; font-weight: 500;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .report-download:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .report-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; color: var(--white-muted);
+    line-height: 1.8; max-width: 560px; margin: 20px auto 0;
+  }
+
   /* ── CANDIDATE ── */
   .candidate { background: var(--navy-mid); }
   .candidate-inner {
@@ -470,6 +497,7 @@
   <div class="nav-brand">Small Businesses of<br>Carroll County PAC</div>
   <div class="nav-links">
     <a href="#mission">Our Mission</a>
+    <a href="#report">The Report</a>
     <a href="#candidate">George Psoras</a>
     <a href="#join">Join Us</a>
   </div>
@@ -564,6 +592,20 @@
         <p>Everything we publish is sourced from court records, sworn testimony, and verified journalism. Carroll County voters deserve facts — not spin — before they cast their vote.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- REPORT -->
+<section class="report" id="report">
+  <div class="section-inner">
+    <div class="section-label">The Documented Record</div>
+    <h2 class="section-title">Read the Full Report</h2>
+    <p class="section-lead">The Carroll County Citizens' Report documents Allan Culver Jr.'s record using sworn court testimony, published judicial orders, official legislative testimony, and reporting by the Baltimore Banner, Baltimore Sun, and Capital Gazette. Every claim is sourced. Read it and decide for yourself.</p>
+    <a href="/culver-citizens-report.pdf" download class="report-download">Download the Citizens' Report (PDF) →</a>
+    <p class="report-meta">
+      22 pages · Published March 2026 · Version 1.0<br>
+      Paid for by Carroll County Small Businesses PAC. Not authorized by any candidate or candidate's committee.
+    </p>
   </div>
 </section>
 
