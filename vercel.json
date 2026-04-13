@@ -10,5 +10,8 @@
         { "key": "X-XSS-Protection", "value": "1; mode=block" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/chat.js": { "memory": 256, "maxDuration": 30 }
+  }
 }
