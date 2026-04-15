@@ -43,12 +43,64 @@ PATTERN OF RESISTING ACCOUNTABILITY:
 
 GEORGE PSORAS — THE ALTERNATIVE:
 - Republican challenger for Carroll County State's Attorney 2026
+- 38-year Carroll County trial attorney — Hampstead resident
+- Running with Chief Deputy Joe Murtha — one of Maryland's finest trial attorneys
 - Full Brady Rule compliance — mandatory evidence disclosure, no exceptions
 - Relentless prosecution of violent offenders
 - Tackle the opioid epidemic
 - Treat victims with dignity
+- Opposes MPRP — no eminent domain for corporate gain
+- Defended a store owner Culver's office prosecuted — and won (NOT GUILTY, Judge Stansfield)
 - Supports independent oversight and transparency reforms Culver opposed
 - Endorsed by Carroll County Small Businesses PAC
+
+MARYLAND PIEDMONT RELIABILITY PROJECT (MPRP):
+- PSEG (New Jersey corporation) wants to cut a 150-foot-wide, 70-mile transmission line path through Baltimore, Carroll, and Frederick Counties.
+- 400+ properties threatened — farms, family homes, preserved forests, businesses.
+- PSEG has filed court motions to force surveyors onto private land without permission.
+- If property owners refuse, PSEG can invoke eminent domain and take land by force of law.
+- Carroll County Commissioners officially oppose MPRP.
+- George Psoras opposes MPRP — no eminent domain for corporate gain on Carroll County land. No surveyors without consent.
+- Allan Culver has NO public position opposing MPRP or protecting Carroll County landowners.
+Sources: Carroll County Board of Commissioners Resolution; WMAR2 News (April 2025); Baltimore Sun.
+
+THE STORE OWNER CASE:
+- Two criminals broke into a Carroll County small business.
+- When the owner defended himself, Allan Culver's office (prosecutor Melina Rauskolb) charged him with assault — and ignored the criminals.
+- The community demanded the charges be dropped. Culver ignored them and pressed forward.
+- George Psoras defended the store owner. He took the case to trial.
+- Carroll County Circuit Court Judge Stansfield found the store owner NOT GUILTY.
+- Culver's office wasted taxpayer dollars prosecuting the victim.
+Source: Carroll County Circuit Court, Judge Stansfield.
+
+CRIME STATISTICS UNDER CULVER:
+- Carroll County's crime rate surged 173% — the single largest one-year jump in recent county history (FBI NIBRS Data, 2021-2022).
+- $991 cost of crime per Carroll County household per year (CrimeGrade.org 2025).
+- A crime occurs every 2 hours in Carroll County (CrimeGrade.org 2025).
+- 2022 was Culver's year as Acting State's Attorney.
+
+JOE MURTHA — CHIEF DEPUTY STATE'S ATTORNEY:
+- Running alongside George Psoras as his Chief Deputy State's Attorney.
+- Started as Assistant State's Attorney, Howard County — prosecuted felonies and death penalty cases.
+- AV Preeminent — Martindale-Hubbell's highest possible peer rating for excellence and ethics.
+- Named Super Lawyer every year — recognized locally and nationally.
+- Recipient of the John Adams Award — US District Court for the District of Maryland.
+- Fellow, American College of Trial Lawyers — one of the highest honors in law.
+- Won acquittals in the Linda Tripp case and the Freddie Gray Officer Porter case.
+- Together with Psoras: will personally train every prosecutor, hire community-minded prosecutors, establish specialized prosecution units with Sheriff and State Police.
+
+GEORGE PSORAS — EXPANDED BIO:
+- 38+ years as a Maryland trial attorney — homicides, felonies, civil, family, corporate.
+- Tried cases in virtually every court in Maryland — Ocean City to Garrett County.
+- Graduated University of Baltimore magna cum laude — School of Law, 1986.
+- 2026 Martindale-Hubbell Client Champion Award — top-rated by clients and peers.
+- Lifelong Carroll County community member — Hampstead resident.
+- Community service: Rising Above Addiction Carroll County, Maryland Food Bank, Maryland Special Olympics, Westminster Rescue Mission, Business Advocates for Veterans.
+
+MELINA RAUSKOLB:
+- Assistant State's Attorney hired by Allan Culver.
+- Was the prosecutor in the store owner case — charged a crime victim with assault and lost.
+- If Culver wins, prosecutors like Rauskolb are who he will hire.
 
 SOURCES: Baltimore Banner (June 6, 2022, Justin Fenton), Baltimore Sun (June 15, 2022), Capital Gazette (Oct 23, 2023), Maryland General Assembly testimony archive (mgaleg.maryland.gov), Carroll County Circuit Court records.
 
