@@ -970,16 +970,26 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 // Join form
 function handleJoin(e) {
   e.preventDefault();
-  const data = {};
-  e.target.querySelectorAll('input, select').forEach(field => {
-    if (field.type === 'checkbox') data[field.closest('.form-check-text')?.querySelector('strong')?.textContent || 'check'] = field.checked;
-    else if (field.value) data[field.type || field.tagName] = field.value;
-  });
-  // Replace YOUR_FORM_ID with actual Formspree form ID
-  fetch('https://formspree.io/f/YOUR_FORM_ID', {
+  const f = e.target;
+  const inputs = f.querySelectorAll('input:not([type=checkbox]), select');
+  const checks = f.querySelectorAll('input[type=checkbox]');
+  const data = {
+    firstName: inputs[0]?.value || '',
+    lastName: inputs[1]?.value || '',
+    email: inputs[2]?.value || '',
+    phone: inputs[3]?.value || '',
+    city: inputs[4]?.value || '',
+    helpType: inputs[5]?.value || '',
+    optEmail: checks[0]?.checked || false,
+    optText: checks[1]?.checked || false,
+    optVoter: checks[2]?.checked || false,
+    source: 'sbocc-website',
+    timestamp: new Date().toISOString()
+  };
+  fetch('/api/signup', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify({ ...data, source: window.location.hostname, timestamp: new Date().toISOString() })
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
   }).catch(() => {});
   document.getElementById('joinForm').style.display = 'none';
   document.getElementById('joinSuccess').style.display = 'block';
