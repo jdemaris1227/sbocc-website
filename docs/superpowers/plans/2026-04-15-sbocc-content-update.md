@@ -85,7 +85,7 @@ Insert after the closing `</section>` of the MISSION section (line 618) and befo
   <div class="crime-band-stats">
     <div class="crime-stat">
       <strong>173%</strong>
-      <span>Crime surge in Carroll County under Culver's watch</span>
+      <span>Crime surge in Carroll County in one year</span>
     </div>
     <div class="crime-stat">
       <strong>$991</strong>
@@ -96,7 +96,7 @@ Insert after the closing `</section>` of the MISSION section (line 618) and befo
       <span>A crime occurs in Carroll County</span>
     </div>
   </div>
-  <p class="crime-band-sub">2022 was Culver's year as Acting State's Attorney. It was the worst year Carroll County had seen.</p>
+  <p class="crime-band-sub">Carroll County needs leadership that will reverse these trends. George Psoras and Joe Murtha are ready.</p>
   <p class="crime-band-source">Sources: FBI NIBRS Data 2021-2022 · CrimeGrade.org 2025</p>
 </div>
 ```
@@ -153,39 +153,29 @@ Insert after the report CSS rules (after `.report-meta`) and before `/* ── C
   .mprp-facts li::before {
     content: '⚠'; flex-shrink: 0; margin-top: 2px;
   }
-  .mprp-cards { display: flex; flex-direction: column; gap: 16px; }
-  .mprp-card {
-    padding: 24px;
-    border-left: 3px solid var(--gold-border);
-    background: rgba(255,255,255,0.03);
-  }
-  .mprp-card.hero-card {
-    border-left-color: var(--gold);
+  .mprp-promise {
     background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    border-left: 3px solid var(--gold);
+    padding: 28px 24px;
   }
-  .mprp-card.silent-card {
-    border-left-color: rgba(247,244,239,0.15);
-    opacity: 0.7;
-  }
-  .mprp-card h4 {
+  .mprp-promise h4 {
     font-family: 'Playfair Display', serif;
-    font-size: 18px; font-weight: 700;
-    color: var(--white); margin-bottom: 8px;
+    font-size: 20px; font-weight: 700;
+    color: var(--gold); margin-bottom: 12px;
   }
-  .mprp-card.hero-card h4 { color: var(--gold); }
-  .mprp-card ul {
+  .mprp-promise ul {
     list-style: none;
   }
-  .mprp-card ul li {
-    font-size: 14px; color: var(--white-dim);
-    line-height: 1.65; padding: 4px 0; font-weight: 300;
-    display: flex; align-items: flex-start; gap: 8px;
+  .mprp-promise ul li {
+    font-size: 15px; color: var(--white-dim);
+    line-height: 1.7; padding: 6px 0; font-weight: 300;
+    display: flex; align-items: flex-start; gap: 10px;
   }
-  .mprp-card ul li::before {
+  .mprp-promise ul li::before {
     content: '→'; color: var(--gold); flex-shrink: 0;
     font-family: 'DM Mono', monospace;
   }
-  .mprp-card.silent-card ul li::before { color: var(--white-muted); content: '✕'; }
   .mprp-source {
     font-family: 'DM Mono', monospace;
     font-size: 9px; color: rgba(247,244,239,0.25);
@@ -203,8 +193,8 @@ Insert after `</section>` of WHY IT MATTERS and before `<!-- REPORT -->`:
   <div class="section-inner">
     <div class="mprp-grid">
       <div class="mprp-text fade-up">
-        <div class="section-label">Your Property Is Under Attack</div>
-        <h2 class="section-title">A New Jersey Corporation Wants to Bulldoze Through Carroll County</h2>
+        <div class="section-label">Protecting Carroll County Property</div>
+        <h2 class="section-title">George Psoras Will Protect Your Land From Corporate Takeover</h2>
         <p>The <strong>Maryland Piedmont Reliability Project (MPRP)</strong> is a proposal by PSEG — a New Jersey corporation — to cut a 150-foot-wide, 70-mile transmission line path through Baltimore, Carroll, and Frederick Counties.</p>
         <p>This isn't hypothetical. PSEG has already filed court motions to force surveyors onto private land — <strong>without property owners' permission.</strong> If you refuse, they can invoke eminent domain and take your land by force of law.</p>
         <ul class="mprp-facts">
@@ -215,24 +205,15 @@ Insert after `</section>` of WHY IT MATTERS and before `<!-- REPORT -->`:
         </ul>
         <p class="mprp-source">Sources: Carroll County Board of Commissioners Resolution opposing MPRP · WMAR2 News (April 2025) · Baltimore Sun</p>
       </div>
-      <div class="mprp-cards fade-up">
-        <div class="section-label">Where They Stand</div>
-        <div class="mprp-card hero-card">
-          <h4>George Psoras Says NO</h4>
+      <div class="fade-up">
+        <div class="section-label">George Psoras Will Fight For You</div>
+        <div class="mprp-promise">
+          <h4>George Psoras Says NO to MPRP</h4>
           <ul>
-            <li>Opposes MPRP — no eminent domain for corporate gain on Carroll County land</li>
+            <li>No eminent domain for corporate gain on Carroll County land</li>
             <li>No surveyors on your private property without your consent</li>
-            <li>Defended a Carroll County business owner charged after a break-in — and won</li>
+            <li>Your property, your rights — period</li>
             <li>38 years fighting for people, not corporations</li>
-          </ul>
-        </div>
-        <div class="mprp-card silent-card">
-          <h4>Allan Culver — Silent</h4>
-          <ul>
-            <li>No public position opposing MPRP or protecting landowners from eminent domain</li>
-            <li>Silent while a NJ corporation files motions to force entry onto Carroll County land</li>
-            <li>Charged a store owner with assault after criminals broke into his store — ignored the criminals</li>
-            <li>Doesn't believe you have the right to defend your property</li>
           </ul>
         </div>
       </div>
@@ -300,38 +281,16 @@ Insert after the MPRP CSS and before candidate CSS:
     font-size: 14px; color: rgba(11,26,46,0.7);
     margin-top: 8px; font-weight: 400;
   }
-  .store-contrast {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 24px; max-width: 760px; margin: 0 auto;
+  .store-takeaway {
+    max-width: 760px; margin: 0 auto;
+    background: var(--gold-dim);
+    border-left: 3px solid var(--gold);
+    padding: 24px 28px;
   }
-  .store-col {
-    padding: 24px;
-    border-top: 3px solid var(--gold-border);
-    background: rgba(255,255,255,0.03);
-  }
-  .store-col.psoras-col { border-top-color: var(--gold); }
-  .store-col.culver-col { border-top-color: var(--red); opacity: 0.8; }
-  .store-col h4 {
+  .store-takeaway p {
     font-family: 'Playfair Display', serif;
-    font-size: 18px; font-weight: 700;
-    color: var(--white); margin-bottom: 12px;
-  }
-  .store-col ul {
-    list-style: none;
-  }
-  .store-col ul li {
-    font-size: 14px; color: var(--white-dim);
-    line-height: 1.65; padding: 6px 0;
-    display: flex; align-items: flex-start; gap: 8px;
-    font-weight: 300;
-  }
-  .store-col.psoras-col ul li::before {
-    content: '✓'; color: var(--gold); flex-shrink: 0;
-    font-family: 'DM Mono', monospace; font-weight: 700;
-  }
-  .store-col.culver-col ul li::before {
-    content: '✕'; color: var(--red); flex-shrink: 0;
-    font-family: 'DM Mono', monospace;
+    font-size: 18px; font-style: italic;
+    color: var(--white); line-height: 1.55; margin: 0;
   }
   .store-source {
     font-family: 'DM Mono', monospace;
@@ -348,54 +307,29 @@ Insert after `</section>` of REPORT and before `<!-- CANDIDATE -->`:
 <!-- STORE OWNER CASE -->
 <section class="store-case" id="store-owner">
   <div class="section-inner">
-    <div class="section-label">The Case That Tells You Everything</div>
-    <h2 class="section-title">A Store Owner Was Broken Into.<br>He Defended Himself. Culver Prosecuted Him.</h2>
+    <div class="section-label">George Psoras in Action</div>
+    <h2 class="section-title">When a Carroll County Business Owner Needed a Champion, George Psoras Was There.</h2>
     <div class="store-case-narrative fade-up">
-      <p>Two criminals broke into a Carroll County small business. When the owner defended himself, <strong>Allan Culver's office charged him with assault</strong> — and ignored the criminals. The community demanded the charges be dropped. Culver ignored them and pressed forward.</p>
-      <p>George Psoras took the case. He defended that store owner in court. A Carroll County Circuit Court judge disagreed with Culver's office completely.</p>
+      <p>Two criminals broke into a Carroll County small business. When the owner defended himself and his property, <strong>he was charged with assault.</strong> The community was outraged. They demanded the charges be dropped. The State's Attorney's office pressed forward anyway.</p>
+      <p>George Psoras stepped up. He took the case, defended the store owner in court, and fought for his right to protect what he'd built. A Carroll County Circuit Court judge agreed.</p>
     </div>
     <div class="verdict-box fade-up">
       <div class="verdict-label">Official Verdict — Carroll County Circuit Court</div>
       <div class="verdict-text">NOT GUILTY</div>
-      <div class="verdict-sub">Judge Stansfield, Carroll County Circuit Court — Culver's office wasted your tax dollars prosecuting the victim.</div>
+      <div class="verdict-sub">Judge Stansfield, Carroll County Circuit Court — George Psoras defended the victim and won.</div>
     </div>
-    <div class="store-contrast fade-up">
-      <div class="store-col psoras-col">
-        <h4>George Psoras</h4>
-        <ul>
-          <li>Defended the store owner</li>
-          <li>Believed in the right to self-defense</li>
-          <li>Won the case — NOT GUILTY</li>
-          <li>Fights for business owners</li>
-        </ul>
-      </div>
-      <div class="store-col culver-col">
-        <h4>Allan Culver</h4>
-        <ul>
-          <li>Prosecuted the store owner</li>
-          <li>Charged the victim with assault</li>
-          <li>Lost the case — wasted tax dollars</li>
-          <li>Fights against business owners</li>
-        </ul>
-      </div>
+    <div class="store-takeaway fade-up">
+      <p>"George Psoras believes you have the right to defend yourself, your family, and your property. He proved it in court — and he'll prove it as your State's Attorney."</p>
     </div>
     <p class="store-source">Source: Carroll County Circuit Court, Judge Stansfield</p>
   </div>
 </section>
 ```
 
-- [ ] **Step 3: Add responsive rule**
-
-In `@media (max-width: 768px)`, add:
-
-```css
-    .store-contrast { grid-template-columns: 1fr; }
-```
-
-- [ ] **Step 4: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
-cd /Users/jd/workspace/sbocc-website && git add index.html && git commit -m "Add store owner case section with verdict and contrast"
+cd /Users/jd/workspace/sbocc-website && git add index.html && git commit -m "Add store owner case section — Psoras success story"
 ```
 
 ---
