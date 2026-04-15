@@ -444,48 +444,6 @@
 
   /* ── CANDIDATE ── */
   .candidate { background: var(--navy-mid); }
-  .candidate-inner {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 72px; align-items: center;
-  }
-  .candidate-photo {
-    position: relative;
-  }
-  .candidate-photo-frame {
-    width: 100%; aspect-ratio: 3/4;
-    background: var(--navy-light);
-    border: 2px solid var(--gold-border);
-    display: flex; align-items: center; justify-content: center;
-    position: relative; overflow: hidden;
-  }
-  .candidate-photo-frame::after {
-    content: '';
-    position: absolute; bottom: 0; left: 0; right: 0; height: 40%;
-    background: linear-gradient(transparent, rgba(11,26,46,0.8));
-  }
-  .candidate-name-badge {
-    position: absolute; bottom: -1px; left: -1px; right: -1px;
-    background: var(--gold);
-    padding: 14px 20px; z-index: 2;
-  }
-  .candidate-name-badge strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px; font-weight: 700;
-    color: var(--navy);
-  }
-  .candidate-name-badge span {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.14em;
-    text-transform: uppercase; color: rgba(11,26,46,0.7);
-  }
-  .candidate-text p {
-    font-size: 17px; font-weight: 300;
-    line-height: 1.85; color: var(--white-dim);
-    margin-bottom: 20px;
-  }
-  .candidate-text p strong { color: var(--white); }
   .platform-list {
     list-style: none; margin: 28px 0;
   }
@@ -499,6 +457,85 @@
     content: '→';
     color: var(--gold); flex-shrink: 0;
     font-family: 'DM Mono', monospace;
+  }
+
+  /* ── DREAM TEAM ── */
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px; margin-bottom: 48px;
+  }
+  .team-member {
+    display: flex; flex-direction: column;
+  }
+  .team-photo {
+    width: 100%; aspect-ratio: 3/4;
+    background: var(--navy-light);
+    border: 2px solid var(--gold-border);
+    position: relative; overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .team-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+  }
+  .team-photo-placeholder {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px; color: var(--gold-border);
+  }
+  .team-badge {
+    background: var(--gold);
+    padding: 12px 16px;
+    position: absolute; bottom: 0; left: 0; right: 0;
+  }
+  .team-badge strong {
+    display: block; font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700; color: var(--navy);
+  }
+  .team-badge span {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: rgba(11,26,46,0.7);
+  }
+  .team-creds {
+    list-style: none;
+  }
+  .team-creds li {
+    font-size: 14px; color: var(--white-dim);
+    line-height: 1.65; padding: 6px 0;
+    border-bottom: 1px solid rgba(247,244,239,0.06);
+    display: flex; align-items: flex-start; gap: 10px;
+    font-weight: 300;
+  }
+  .team-creds li:last-child { border: none; }
+  .team-creds li::before {
+    content: '\2192'; color: var(--gold); flex-shrink: 0;
+    font-family: 'DM Mono', monospace;
+  }
+  .team-promises {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--gold-border);
+    padding: 36px 32px;
+    margin-bottom: 32px;
+  }
+  .team-promises h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--white); margin-bottom: 20px;
+  }
+  .values-badges {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .values-badge {
+    padding: 8px 16px;
+    background: var(--gold-dim);
+    border: 1px solid var(--gold-border);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.08em;
+    color: var(--gold); text-transform: uppercase;
   }
 
   /* ── CHATBOT ── */
@@ -659,7 +696,7 @@
     .nav-links { display: none; }
     section { padding: 64px 24px; }
     .hero { padding: 100px 24px 64px; }
-    .mission-grid, .candidate-inner, .join-grid { grid-template-columns: 1fr; gap: 40px; }
+    .mission-grid, .team-grid, .join-grid { grid-template-columns: 1fr; gap: 40px; }
     .mprp-grid { grid-template-columns: 1fr; gap: 40px; }
     .why-cards { grid-template-columns: 1fr; }
 .band { gap: 32px; }
@@ -876,38 +913,70 @@
   </div>
 </section>
 
-<!-- CANDIDATE -->
+<!-- CANDIDATE / DREAM TEAM -->
 <section class="candidate" id="candidate">
   <div class="section-inner">
-    <div class="candidate-inner">
-      <div class="candidate-photo fade-up">
-        <div class="candidate-photo-frame">
-          <img src="george-portrait.png" 
-               style="width:100%;height:100%;object-fit:cover;object-position:center top;"
-               alt="George Psoras — Republican Candidate for Carroll County State's Attorney 2026">
-          <div class="candidate-name-badge">
-            <strong>George Psoras</strong>
-            <span>Republican Candidate · State's Attorney 2026</span>
+    <div class="section-label">Your Team</div>
+    <h2 class="section-title">George Psoras & Joe Murtha — Carroll County's Dream Team</h2>
+    <p class="section-lead" style="margin-bottom:48px;">Two of Maryland's most experienced trial attorneys — together for Carroll County. Republican Primary June 23 · Early Voting June 11.</p>
+    <div class="team-grid">
+      <div class="team-member fade-up">
+        <div class="team-photo">
+          <img src="george-portrait.png" alt="George Psoras Jr. — Candidate for State's Attorney">
+          <div class="team-badge">
+            <strong>George Psoras Jr.</strong>
+            <span>Your State's Attorney</span>
           </div>
         </div>
-      </div>
-      <div class="candidate-text fade-up">
-        <div class="section-label">Our Candidate</div>
-        <h2 class="section-title">George Psoras for Carroll County State's Attorney</h2>
-        <p>George Psoras has spent his career as a prosecutor who believes the law means what it says. He knows Carroll County. He understands what our businesses, families, and community need from the chief law enforcement officer of this county.</p>
-        <p>George is running because Carroll County deserves a State's Attorney who is <strong>independent of the political relationships</strong> that have defined this office — and who will bring integrity, transparency, and relentless prosecution of violent crime to the role from day one.</p>
-        <ul class="platform-list">
-          <li>Full Brady Rule compliance — mandatory evidence disclosure, no exceptions</li>
-          <li>Relentless prosecution of violent offenders and repeat criminals</li>
-          <li>Treat crime victims with dignity and prioritize their experience</li>
-          <li>Support independent oversight and public transparency</li>
-          <li>No political debts — answers to Carroll County voters only</li>
+        <ul class="team-creds">
+          <li>38+ years as a Maryland trial attorney</li>
+          <li>Thousands of cases across every Maryland court</li>
+          <li>Magna Cum Laude — University of Baltimore School of Law</li>
+          <li>2026 Martindale-Hubbell Client Champion Award</li>
+          <li>Lifelong Carroll County resident — Hampstead, Maryland</li>
+          <li>Defended a store owner the SA's office prosecuted — and won</li>
         </ul>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;">
-          <a href="https://electpsoras.com" class="btn-primary" target="_blank">Campaign Website →</a>
-          <a href="https://carrollcountyjustice.org" class="btn-outline" target="_blank">See the Full Record</a>
-        </div>
       </div>
+      <div class="team-member fade-up">
+        <div class="team-photo">
+          <div class="team-photo-placeholder">JM</div>
+          <div class="team-badge">
+            <strong>Joe Murtha</strong>
+            <span>Your Chief Deputy State's Attorney</span>
+          </div>
+        </div>
+        <ul class="team-creds">
+          <li>Started as ASA, Howard County — felonies and death penalty cases</li>
+          <li>AV Preeminent — Martindale-Hubbell's highest peer rating</li>
+          <li>Named Super Lawyer every year</li>
+          <li>John Adams Award — US District Court, District of Maryland</li>
+          <li>Fellow, American College of Trial Lawyers</li>
+          <li>Won acquittals in Linda Tripp case and Freddie Gray Officer Porter case</li>
+        </ul>
+      </div>
+    </div>
+    <div class="team-promises fade-up">
+      <h3>What George and Joe Will Do for Carroll County</h3>
+      <ul class="platform-list">
+        <li>Personally prosecute serious cases — in the courtroom every day, not a figurehead</li>
+        <li>Hire prosecutors who reflect Carroll County values — tough, fair, community-minded</li>
+        <li>Train prosecutors the right way — with courtroom experience from both sides</li>
+        <li>Specialized prosecution units with Carroll County Sheriff and Maryland State Police</li>
+        <li>Stand up for property owners, business owners, and crime victims — not prosecute them</li>
+        <li>Full Brady Rule compliance — mandatory evidence disclosure, no exceptions</li>
+        <li>Full transparency — the community will always know what's happening in their SA's office</li>
+      </ul>
+    </div>
+    <div class="values-badges fade-up">
+      <div class="values-badge">God &amp; Country</div>
+      <div class="values-badge">2nd Amendment</div>
+      <div class="values-badge">Stands for the Anthem</div>
+      <div class="values-badge">Carroll County Roots</div>
+      <div class="values-badge">Never Backs Down</div>
+    </div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;" class="fade-up">
+      <a href="https://electpsoras.com" class="btn-primary" target="_blank">Campaign Website →</a>
+      <a href="https://carrollcountyjustice.org" class="btn-outline" target="_blank">See the Full Record</a>
     </div>
   </div>
 </section>
