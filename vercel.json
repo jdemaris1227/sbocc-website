@@ -11,6 +11,11 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/candidate", "destination": "https://electpsoras.com", "permanent": false },
+    { "source": "/voter-guide", "destination": "https://carrollcountyvotes2026.com", "permanent": false },
+    { "source": "/justice", "destination": "https://carrollcountyjustice.org", "permanent": false }
+  ],
   "functions": {
     "api/chat.js": { "memory": 256, "maxDuration": 30 },
     "api/signup.js": { "memory": 256, "maxDuration": 30 }

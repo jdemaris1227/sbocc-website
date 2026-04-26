@@ -1,0 +1,6 @@
+docs/videos/footage/
+docs/videos/text_frames/
+docs/videos/vo/
+docs/videos/*.mp4
+docs/videos/*.m4a
+docs/videos/*.mp3
